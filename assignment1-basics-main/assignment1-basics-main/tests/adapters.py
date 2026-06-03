@@ -89,7 +89,12 @@ def run_swiglu(
     # swiglu.w1.weight.data = w1_weight
     # swiglu.w2.weight.data = w2_weight
     # swiglu.w3.weight.data = w3_weight
-    raise NotImplementedError
+    from cs336_basics.swiglu import SwiGLU
+    model = SwiGLU(d_model, d_ff)
+    model.linear1.weight.data = w1_weight
+    model.linear2.weight.data = w2_weight
+    model.linear3.weight.data = w3_weight
+    return model(in_features)
 
 
 def run_scaled_dot_product_attention(
