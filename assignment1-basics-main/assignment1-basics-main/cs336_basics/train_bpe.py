@@ -119,18 +119,39 @@ def train_bpe(
         new_token = best_pair[0] + best_pair[1]
         vocab[len(vocab)] = new_token
 
-        # 在所有word中合并这个pair
+        # # 在所有word中合并这个pair
+        # new_word_freqs = Counter()
+        # for word, freq in word_freqs.items():
+        #     new_word = merge_pair(word, best_pair)
+        #     new_word_freqs[new_word] += freq
+
+        # # 更新词频统计
+        # pair_freqs = Counter()
+        # for word, freq in new_word_freqs.items():
+        #     for i in range(len(word)-1):
+        #         pair = (word[i], word[i+1])
+        #         pair_freqs[pair] += freq
+        # word_freqs = new_word_freqs
+
+        #更新词频统计（增量更新法）
         new_word_freqs = Counter()
         for word, freq in word_freqs.items():
             new_word = merge_pair(word, best_pair)
-            new_word_freqs[new_word] += freq
-
-        # 更新词频统计
-        pair_freqs = Counter()
-        for word, freq in new_word_freqs.items():
-            for i in range(len(word)-1):
-                pair = (word[i], word[i+1])
-                pair_freqs[pair] += freq
+            # 如果合并后word有变化,则更新pair_freqs和word_freqs
+            if new_word != word:
+                # 移除旧word对pair_freqs的贡献
+                for i in range(len(word)-1):
+                    pair_freqs[(word[i], word[i+1])] -= freq
+                    if pair_freqs[(word[i], word[i+1])] <= 0:
+                        del pair_freqs[(word[i], word[i+1])]
+                # 添加新word对pair_freqs的贡献
+                for i in range(len(new_word)-1):
+                    pair_freqs[(new_word[i], new_word[i+1])] += freq
+                # 更新word_freqs
+                new_word_freqs[new_word] += freq
+            # 如果合并后word没有变化,则直接更新word_freqs
+            else:
+                new_word_freqs[word] += freq
         word_freqs = new_word_freqs
 
     return vocab, merges
