@@ -6,7 +6,7 @@ from .Softmax import softmax
 """  Attention(Q, K, V) = softmax(QK^T / √d_k) V  """
 
 def scaled_dot_product_attention(
-    Q: torch.Tensor,    #(batch_size, ..., seq_len, d_k)
+    Q: torch.Tensor,    #(batch_size, ..., seq_len, d_k) 注意q,k,v的维度是不一样的
     K: torch.Tensor,    #(batch_size, ..., seq_len, d_k)
     V: torch.Tensor,    #(batch_size, ..., seq_len, d_v)
     mask: torch.Tensor | None = None,
