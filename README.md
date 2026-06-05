@@ -37,6 +37,7 @@ cs336_basics/
 
 ├── data_loading.py           # 数据加载（从 numpy 数组采样批次）
 ├── checkpoint.py             # 模型检查点保存/加载
+├── generation.py             # 文本生成（温度采样 + Top-p 采样）
 └── train.py                  # 完整训练循环
 
 tests/
@@ -68,6 +69,8 @@ tests/
 | | `MultiHeadSelfAttention_with_RoPE.py` | 带 RoPE 的多头自注意力 |
 | **模型架构** | `transformer_block.py` | Pre-LN Transformer 块（`RMSNorm → MHA → 残差 → RMSNorm → SwiGLU → 残差`）|
 | | `transformer_lm.py` | 完整语言模型（`Embedding → N×Block → RMSNorm → LM Head`）|
+| **推理** | `generation.py` | 文本生成（温度采样、Top-p 核采样、完整生成流水线） |
+
 | **训练** | `cross_entropy.py` | 交叉熵损失（手动实现，含数值稳定性优化） |
 | | `AdamW.py` | AdamW 优化器（手写，含权重衰减、动量更新） |
 | | `gradient_clipping.py` | 梯度裁剪（按全局 L2 范数缩放） |
