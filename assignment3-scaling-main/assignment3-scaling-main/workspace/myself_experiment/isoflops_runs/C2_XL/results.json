@@ -1,0 +1,16 @@
+{
+  "run_id": "C2_XL",
+  "compute_budget": 1000000000000000.0,
+  "n_params": 7278592,
+  "num_train_tokens": 22898201,
+  "num_optimizer_steps": 2795,
+  "final_val_loss": 4.886762619018555,
+  "train_time_seconds": 606.6511902999991,
+  "config": {
+    "hidden_size": 256,
+    "num_hidden_layers": 6,
+    "num_attention_heads": 8,
+    "head_dim": 32,
+    "intermediate_size": 1024
+  }
+}

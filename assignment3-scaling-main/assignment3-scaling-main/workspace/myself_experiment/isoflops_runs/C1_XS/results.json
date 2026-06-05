@@ -1,0 +1,16 @@
+{
+  "run_id": "C1_XS",
+  "compute_budget": 500000000000000.0,
+  "n_params": 738304,
+  "num_train_tokens": 112871301,
+  "num_optimizer_steps": 13778,
+  "final_val_loss": 4.687467336654663,
+  "train_time_seconds": 628.7290603999936,
+  "config": {
+    "hidden_size": 64,
+    "num_hidden_layers": 2,
+    "num_attention_heads": 4,
+    "head_dim": 16,
+    "intermediate_size": 256
+  }
+}

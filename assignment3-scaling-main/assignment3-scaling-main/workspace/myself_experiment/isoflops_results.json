@@ -1,0 +1,178 @@
+[
+  {
+    "run_id": "C0_XS",
+    "compute_budget": 1000000000000000.0,
+    "n_params": 738304,
+    "num_train_tokens": 225742602,
+    "num_optimizer_steps": 27556,
+    "final_val_loss": 16.494670391082764,
+    "train_time_seconds": 576.3735954999938,
+    "config": {
+      "hidden_size": 64,
+      "num_hidden_layers": 2,
+      "num_attention_heads": 4,
+      "head_dim": 16,
+      "intermediate_size": 256
+    }
+  },
+  {
+    "run_id": "C0_S",
+    "compute_budget": 100000000000000.0,
+    "n_params": 1291776,
+    "num_train_tokens": 12902133,
+    "num_optimizer_steps": 1574,
+    "final_val_loss": 5.1596519947052,
+    "train_time_seconds": 44.91911480000272,
+    "config": {
+      "hidden_size": 96,
+      "num_hidden_layers": 3,
+      "num_attention_heads": 4,
+      "head_dim": 24,
+      "intermediate_size": 384
+    }
+  },
+  {
+    "run_id": "C0_M",
+    "compute_budget": 100000000000000.0,
+    "n_params": 2066432,
+    "num_train_tokens": 8065431,
+    "num_optimizer_steps": 984,
+    "final_val_loss": 5.3265615701675415,
+    "train_time_seconds": 33.54321090000303,
+    "config": {
+      "hidden_size": 128,
+      "num_hidden_layers": 4,
+      "num_attention_heads": 4,
+      "head_dim": 32,
+      "intermediate_size": 512
+    }
+  },
+  {
+    "run_id": "C0_XL",
+    "compute_budget": 100000000000000.0,
+    "n_params": 7278592,
+    "num_train_tokens": 2289820,
+    "num_optimizer_steps": 279,
+    "final_val_loss": 5.877652645111084,
+    "train_time_seconds": 23.578354299999774,
+    "config": {
+      "hidden_size": 256,
+      "num_hidden_layers": 6,
+      "num_attention_heads": 8,
+      "head_dim": 32,
+      "intermediate_size": 1024
+    }
+  },
+  {
+    "run_id": "C1_XS",
+    "compute_budget": 500000000000000.0,
+    "n_params": 738304,
+    "num_train_tokens": 112871301,
+    "num_optimizer_steps": 13778,
+    "final_val_loss": 4.715230822563171,
+    "train_time_seconds": 248.52534359999845,
+    "config": {
+      "hidden_size": 64,
+      "num_hidden_layers": 2,
+      "num_attention_heads": 4,
+      "head_dim": 16,
+      "intermediate_size": 256
+    }
+  },
+  {
+    "run_id": "C1_S",
+    "compute_budget": 500000000000000.0,
+    "n_params": 1291776,
+    "num_train_tokens": 64510668,
+    "num_optimizer_steps": 7874,
+    "final_val_loss": 4.7309898138046265,
+    "train_time_seconds": 203.2570085000043,
+    "config": {
+      "hidden_size": 96,
+      "num_hidden_layers": 3,
+      "num_attention_heads": 4,
+      "head_dim": 24,
+      "intermediate_size": 384
+    }
+  },
+  {
+    "run_id": "C1_M",
+    "compute_budget": 500000000000000.0,
+    "n_params": 2066432,
+    "num_train_tokens": 40327159,
+    "num_optimizer_steps": 4922,
+    "final_val_loss": 4.766137361526489,
+    "train_time_seconds": 154.87380480000138,
+    "config": {
+      "hidden_size": 128,
+      "num_hidden_layers": 4,
+      "num_attention_heads": 4,
+      "head_dim": 32,
+      "intermediate_size": 512
+    }
+  },
+  {
+    "run_id": "C1_XL",
+    "compute_budget": 500000000000000.0,
+    "n_params": 7278592,
+    "num_train_tokens": 11449100,
+    "num_optimizer_steps": 1397,
+    "final_val_loss": 5.0797039270401,
+    "train_time_seconds": 117.17078600000241,
+    "config": {
+      "hidden_size": 256,
+      "num_hidden_layers": 6,
+      "num_attention_heads": 8,
+      "head_dim": 32,
+      "intermediate_size": 1024
+    }
+  },
+  {
+    "run_id": "C2_S",
+    "compute_budget": 1000000000000000.0,
+    "n_params": 1291776,
+    "num_train_tokens": 129021337,
+    "num_optimizer_steps": 15749,
+    "final_val_loss": 5.0997889041900635,
+    "train_time_seconds": 923.5199199999988,
+    "config": {
+      "hidden_size": 96,
+      "num_hidden_layers": 3,
+      "num_attention_heads": 4,
+      "head_dim": 24,
+      "intermediate_size": 384
+    }
+  },
+  {
+    "run_id": "C2_M",
+    "compute_budget": 1000000000000000.0,
+    "n_params": 2066432,
+    "num_train_tokens": 80654319,
+    "num_optimizer_steps": 9845,
+    "final_val_loss": 5.429223418235779,
+    "train_time_seconds": 814.1667535000015,
+    "config": {
+      "hidden_size": 128,
+      "num_hidden_layers": 4,
+      "num_attention_heads": 4,
+      "head_dim": 32,
+      "intermediate_size": 512
+    }
+  },
+  {
+    "run_id": "C2_XL",
+    "compute_budget": 1000000000000000.0,
+    "n_params": 7278592,
+    "num_train_tokens": 22898201,
+    "num_optimizer_steps": 2795,
+    "final_val_loss": 4.886762619018555,
+    "train_time_seconds": 606.6511902999991,
+    "config": {
+      "hidden_size": 256,
+      "num_hidden_layers": 6,
+      "num_attention_heads": 8,
+      "head_dim": 32,
+      "intermediate_size": 1024
+    }
+  }
+]
