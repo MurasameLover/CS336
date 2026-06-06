@@ -1,11 +1,11 @@
 {
   "run_id": "C1_M",
-  "compute_budget": 500000000000000.0,
+  "compute_budget": 1000000000000000.0,
   "n_params": 2066432,
-  "num_train_tokens": 40327159,
-  "num_optimizer_steps": 4922,
-  "final_val_loss": 6.487827658653259,
-  "train_time_seconds": 176.13287990000003,
+  "num_train_tokens": 80654319,
+  "num_optimizer_steps": 9845,
+  "final_val_loss": 5.651888728141785,
+  "train_time_seconds": 336.1449293000005,
   "config": {
     "hidden_size": 128,
     "num_hidden_layers": 4,

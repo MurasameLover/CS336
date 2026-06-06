@@ -1,11 +1,11 @@
 {
   "run_id": "C2_XL",
-  "compute_budget": 1000000000000000.0,
+  "compute_budget": 3000000000000000.0,
   "n_params": 7278592,
-  "num_train_tokens": 22898201,
-  "num_optimizer_steps": 2795,
-  "final_val_loss": 6.240961194038391,
-  "train_time_seconds": 8846.916249400001,
+  "num_train_tokens": 68694604,
+  "num_optimizer_steps": 8385,
+  "final_val_loss": 5.446847677230835,
+  "train_time_seconds": 793.7763838000028,
   "config": {
     "hidden_size": 256,
     "num_hidden_layers": 6,
