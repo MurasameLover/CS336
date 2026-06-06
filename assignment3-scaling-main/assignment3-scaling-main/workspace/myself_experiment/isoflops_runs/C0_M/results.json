@@ -4,8 +4,8 @@
   "n_params": 2066432,
   "num_train_tokens": 8065431,
   "num_optimizer_steps": 984,
-  "final_val_loss": 5.327685356140137,
-  "train_time_seconds": 80.62972579999769,
+  "final_val_loss": 6.990944266319275,
+  "train_time_seconds": 33.7408218999999,
   "config": {
     "hidden_size": 128,
     "num_hidden_layers": 4,

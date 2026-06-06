@@ -1,12 +1,12 @@
 [
   {
     "run_id": "C0_XS",
-    "compute_budget": 1000000000000000.0,
+    "compute_budget": 100000000000000.0,
     "n_params": 738304,
-    "num_train_tokens": 225742602,
-    "num_optimizer_steps": 27556,
-    "final_val_loss": 16.494670391082764,
-    "train_time_seconds": 576.3735954999938,
+    "num_train_tokens": 22574260,
+    "num_optimizer_steps": 2755,
+    "final_val_loss": 6.851414084434509,
+    "train_time_seconds": 49.59420249999994,
     "config": {
       "hidden_size": 64,
       "num_hidden_layers": 2,
@@ -21,8 +21,8 @@
     "n_params": 1291776,
     "num_train_tokens": 12902133,
     "num_optimizer_steps": 1574,
-    "final_val_loss": 5.1596519947052,
-    "train_time_seconds": 44.91911480000272,
+    "final_val_loss": 7.2272398471832275,
+    "train_time_seconds": 39.603677999999945,
     "config": {
       "hidden_size": 96,
       "num_hidden_layers": 3,
@@ -37,8 +37,8 @@
     "n_params": 2066432,
     "num_train_tokens": 8065431,
     "num_optimizer_steps": 984,
-    "final_val_loss": 5.3265615701675415,
-    "train_time_seconds": 33.54321090000303,
+    "final_val_loss": 6.990944266319275,
+    "train_time_seconds": 33.7408218999999,
     "config": {
       "hidden_size": 128,
       "num_hidden_layers": 4,
@@ -48,13 +48,29 @@
     }
   },
   {
+    "run_id": "C0_L",
+    "compute_budget": 100000000000000.0,
+    "n_params": 4131840,
+    "num_train_tokens": 4033715,
+    "num_optimizer_steps": 492,
+    "final_val_loss": 7.238563656806946,
+    "train_time_seconds": 28.813895599999796,
+    "config": {
+      "hidden_size": 192,
+      "num_hidden_layers": 5,
+      "num_attention_heads": 6,
+      "head_dim": 32,
+      "intermediate_size": 768
+    }
+  },
+  {
     "run_id": "C0_XL",
     "compute_budget": 100000000000000.0,
     "n_params": 7278592,
     "num_train_tokens": 2289820,
     "num_optimizer_steps": 279,
-    "final_val_loss": 5.877652645111084,
-    "train_time_seconds": 23.578354299999774,
+    "final_val_loss": 7.249626040458679,
+    "train_time_seconds": 27.37461069999995,
     "config": {
       "hidden_size": 256,
       "num_hidden_layers": 6,
@@ -69,8 +85,8 @@
     "n_params": 738304,
     "num_train_tokens": 112871301,
     "num_optimizer_steps": 13778,
-    "final_val_loss": 4.715230822563171,
-    "train_time_seconds": 248.52534359999845,
+    "final_val_loss": 5.943480730056763,
+    "train_time_seconds": 270.10447299999987,
     "config": {
       "hidden_size": 64,
       "num_hidden_layers": 2,
@@ -85,8 +101,8 @@
     "n_params": 1291776,
     "num_train_tokens": 64510668,
     "num_optimizer_steps": 7874,
-    "final_val_loss": 4.7309898138046265,
-    "train_time_seconds": 203.2570085000043,
+    "final_val_loss": 6.0325122475624084,
+    "train_time_seconds": 211.86441849999983,
     "config": {
       "hidden_size": 96,
       "num_hidden_layers": 3,
@@ -101,8 +117,8 @@
     "n_params": 2066432,
     "num_train_tokens": 40327159,
     "num_optimizer_steps": 4922,
-    "final_val_loss": 4.766137361526489,
-    "train_time_seconds": 154.87380480000138,
+    "final_val_loss": 6.487827658653259,
+    "train_time_seconds": 176.13287990000003,
     "config": {
       "hidden_size": 128,
       "num_hidden_layers": 4,
@@ -112,13 +128,29 @@
     }
   },
   {
+    "run_id": "C1_L",
+    "compute_budget": 500000000000000.0,
+    "n_params": 4131840,
+    "num_train_tokens": 20168577,
+    "num_optimizer_steps": 2461,
+    "final_val_loss": 6.685568451881409,
+    "train_time_seconds": 151.56777890000012,
+    "config": {
+      "hidden_size": 192,
+      "num_hidden_layers": 5,
+      "num_attention_heads": 6,
+      "head_dim": 32,
+      "intermediate_size": 768
+    }
+  },
+  {
     "run_id": "C1_XL",
     "compute_budget": 500000000000000.0,
     "n_params": 7278592,
     "num_train_tokens": 11449100,
     "num_optimizer_steps": 1397,
-    "final_val_loss": 5.0797039270401,
-    "train_time_seconds": 117.17078600000241,
+    "final_val_loss": 7.209006905555725,
+    "train_time_seconds": 138.1085137,
     "config": {
       "hidden_size": 256,
       "num_hidden_layers": 6,
@@ -128,13 +160,29 @@
     }
   },
   {
+    "run_id": "C2_XS",
+    "compute_budget": 1000000000000000.0,
+    "n_params": 738304,
+    "num_train_tokens": 225742602,
+    "num_optimizer_steps": 27556,
+    "final_val_loss": 6.334635376930237,
+    "train_time_seconds": 527.3571510999996,
+    "config": {
+      "hidden_size": 64,
+      "num_hidden_layers": 2,
+      "num_attention_heads": 4,
+      "head_dim": 16,
+      "intermediate_size": 256
+    }
+  },
+  {
     "run_id": "C2_S",
     "compute_budget": 1000000000000000.0,
     "n_params": 1291776,
     "num_train_tokens": 129021337,
     "num_optimizer_steps": 15749,
-    "final_val_loss": 5.0997889041900635,
-    "train_time_seconds": 923.5199199999988,
+    "final_val_loss": 6.058217465877533,
+    "train_time_seconds": 427.88611109999965,
     "config": {
       "hidden_size": 96,
       "num_hidden_layers": 3,
@@ -149,8 +197,8 @@
     "n_params": 2066432,
     "num_train_tokens": 80654319,
     "num_optimizer_steps": 9845,
-    "final_val_loss": 5.429223418235779,
-    "train_time_seconds": 814.1667535000015,
+    "final_val_loss": 5.612684726715088,
+    "train_time_seconds": 348.9008896,
     "config": {
       "hidden_size": 128,
       "num_hidden_layers": 4,
@@ -160,13 +208,29 @@
     }
   },
   {
+    "run_id": "C2_L",
+    "compute_budget": 1000000000000000.0,
+    "n_params": 4131840,
+    "num_train_tokens": 40337154,
+    "num_optimizer_steps": 4923,
+    "final_val_loss": 6.322955012321472,
+    "train_time_seconds": 307.1951616000001,
+    "config": {
+      "hidden_size": 192,
+      "num_hidden_layers": 5,
+      "num_attention_heads": 6,
+      "head_dim": 32,
+      "intermediate_size": 768
+    }
+  },
+  {
     "run_id": "C2_XL",
     "compute_budget": 1000000000000000.0,
     "n_params": 7278592,
     "num_train_tokens": 22898201,
     "num_optimizer_steps": 2795,
-    "final_val_loss": 4.886762619018555,
-    "train_time_seconds": 606.6511902999991,
+    "final_val_loss": 6.240961194038391,
+    "train_time_seconds": 8846.916249400001,
     "config": {
       "hidden_size": 256,
       "num_hidden_layers": 6,
