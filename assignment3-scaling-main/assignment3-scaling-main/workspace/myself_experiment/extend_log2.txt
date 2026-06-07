@@ -1,0 +1,76 @@
+﻿============================================================
+分析 D_opt = C/(6*N_opt) 的构成
+============================================================
+
+  Name  d_model  Layers      Total    Non-emb   Embed% Non-emb%
+------------------------------------------------------------
+   XXS       48       1    507,648     27,648    94.6%     5.4%
+    XS       64       2    738,304     98,304    86.7%    13.3%
+     S       96       3  1,291,776    331,776    74.3%    25.7%
+     M      128       4  2,066,432    786,432    61.9%    38.1%
+     L      192       5  4,131,840  2,211,840    46.5%    53.5%
+    XL      256       6  7,278,592  4,718,592    35.2%    64.8%
+
+    Budget C      N_opt    Non-emb    D_opt(C/6N)
+--------------------------------------------------
+     5.0e+14    738,304     98,304    112,871,301  [fit]
+     1.0e+15  2,066,432    786,432     80,654,319  [fit]
+     3.0e+15  4,131,840  2,211,840    121,011,462  [fit]
+
+============================================================
+添加新预算: 1e16 (M, L, XL) 和 3e16 (L, XL)
+============================================================
+Loading text from D:\CS336\assignment3-scaling-main\assignment3-scaling-main\workspace\myself_experiment\data_cache\big_text.txt (101,547,736 bytes)
+Loaded 97,861,020 characters
+Training BPE tokenizer...
+
+
+
+Vocabulary size: 5000
+Tokenizing...
+Total tokens: 33,277,216
+Train: 116,990 sequences (29,949,440 tokens)
+Val:   12,998 sequences (3,327,488 tokens)
+
+--- Budget 3: C=1.0e+16 ---
+  [C3_M] cached: loss=4.8619
+  [C3_L] cached: loss=4.8100
+
+  [C3_XL] N=7,278,592 D=228,982,015 steps=27,951
+  Training: 27951 steps, 228,982,015 tokens, bs=32, lr=3.00e-04, warmup=1397
+    step      0/27951  loss=8.5797  lr=2.15e-07
+    step   5590/27951  loss=2.8730  lr=2.84e-04
+    step  11180/27951  loss=3.7456  lr=2.19e-04
+    step  16770/27951  loss=3.8366  lr=1.32e-04
+    step  22360/27951  loss=2.4519  lr=5.85e-05
+    step  27950/27951  loss=3.2425  lr=3.00e-05
+  Training done in 2735.7s (45.6min)
+  Validation loss: 4.3413
+  loss=4.3413
+
+--- Budget 4: C=3.0e+16 ---
+
+  [C4_L] N=4,131,840 D=1,210,114,622 steps=147,719
+  Training: 147719 steps, 1,210,114,622 tokens, bs=32, lr=3.00e-04, warmup=7385
+    step      0/147719  loss=8.5904  lr=4.06e-08
+    step  29543/147719  loss=3.4155  lr=2.84e-04
+    step  59086/147719  loss=3.8807  lr=2.19e-04
+    step  88629/147719  loss=2.3757  lr=1.32e-04
+    step 118172/147719  loss=1.9311  lr=5.85e-05
+    step 147715/147719  loss=2.3202  lr=3.00e-05
+  Training done in 9074.4s (151.2min)
+  Validation loss: 4.3970
+  loss=4.3970
+
+  [C4_XL] N=7,278,592 D=686,946,046 steps=83,855
+  Training: 83855 steps, 686,946,046 tokens, bs=32, lr=3.00e-04, warmup=4192
+    step      0/83855  loss=8.5589  lr=7.16e-08
+    step  16771/83855  loss=3.7717  lr=2.84e-04
+    step  33542/83855  loss=3.5624  lr=2.19e-04
+    step  50313/83855  loss=3.0177  lr=1.32e-04
+    step  67084/83855  loss=1.7441  lr=5.85e-05
+  Training done in 9373.9s (156.2min)
+  Validation loss: 4.0855
+  loss=4.0855
+
+All 23 runs saved

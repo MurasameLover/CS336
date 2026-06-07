@@ -1,0 +1,40 @@
+﻿Validation target: C=5.0e+16
+Predicted N_opt: 13,666,613 (20M scale)
+Using XL: N=7,278,592 D=1,144,910,077 steps=139,759
+Predicted L_min: 3.7740
+Loading text from D:\CS336\assignment3-scaling-main\assignment3-scaling-main\workspace\myself_experiment\data_cache\big_text.txt (101,547,736 bytes)
+Loaded 97,861,020 characters
+Training BPE tokenizer...
+
+
+
+Vocabulary size: 5000
+Tokenizing...
+Total tokens: 33,277,216
+Train: 116,990 sequences (29,949,440 tokens)
+Val:   12,998 sequences (3,327,488 tokens)
+
+Training 139,759 steps...
+  Training: 139759 steps, 1,144,910,077 tokens, bs=32, lr=3.00e-04, warmup=6987
+    step      0/139759  loss=8.5781  lr=4.29e-08
+    step  27951/139759  loss=3.3822  lr=2.84e-04
+    step  55902/139759  loss=1.9544  lr=2.19e-04
+    step  83853/139759  loss=3.1637  lr=1.32e-04
+    step 111804/139759  loss=3.4127  lr=5.85e-05
+    step 139755/139759  loss=2.0078  lr=3.00e-05
+  Training done in 16652.2s (277.5min)
+  Validation loss: 3.9562
+
+=======================================================
+FINAL VALIDATION RESULT
+=======================================================
+  Budget:          C = 5.0e+16 FLOPs
+  Predicted N_opt: 13,666,613
+  Actual model:    XL (7,278,592 params)
+  Tokens:          1,144,910,077 (139,759 steps)
+  Predicted loss:  3.7740
+  Actual loss:     3.9562
+  Difference:      +0.1822
+  Relative error:  4.8%
+=======================================================
+Saved

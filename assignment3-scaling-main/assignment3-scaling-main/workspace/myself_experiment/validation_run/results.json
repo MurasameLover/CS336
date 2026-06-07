@@ -1,11 +1,11 @@
 {
   "run_id": "validation",
-  "compute_budget": 5000000000000000.0,
+  "compute_budget": 5e+16,
   "n_params": 7278592,
-  "num_train_tokens": 114491007,
-  "num_optimizer_steps": 13975,
-  "final_val_loss": 5.024030387401581,
-  "train_time_seconds": 1317.1112969000023,
+  "num_train_tokens": 1144910077,
+  "num_optimizer_steps": 139759,
+  "final_val_loss": 3.956217974424362,
+  "train_time_seconds": 16652.247222000005,
   "config": {
     "hidden_size": 256,
     "num_hidden_layers": 6,

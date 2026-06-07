@@ -1,8 +1,8 @@
 {
-  "budget": 5000000000000000.0,
-  "predicted_loss": 4.402939186702612,
-  "actual_loss": 5.024030387401581,
+  "budget": 5e+16,
+  "predicted_loss": 3.7739774638891674,
+  "actual_loss": 3.956217974424362,
   "N_actual": 7278592,
-  "D_actual": 114491007,
+  "D_actual": 1144910077,
   "model": "XL"
 }

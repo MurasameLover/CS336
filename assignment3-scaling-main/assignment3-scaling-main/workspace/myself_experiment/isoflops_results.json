@@ -286,5 +286,85 @@
       "head_dim": 12,
       "intermediate_size": 192
     }
+  },
+  {
+    "run_id": "C3_L",
+    "compute_budget": 1e+16,
+    "n_params": 4131840,
+    "num_train_tokens": 403371540,
+    "num_optimizer_steps": 49239,
+    "final_val_loss": 4.8100391030311584,
+    "train_time_seconds": 2999.0781249000065,
+    "config": {
+      "hidden_size": 192,
+      "num_hidden_layers": 5,
+      "num_attention_heads": 6,
+      "head_dim": 32,
+      "intermediate_size": 768
+    }
+  },
+  {
+    "run_id": "C3_M",
+    "compute_budget": 1e+16,
+    "n_params": 2066432,
+    "num_train_tokens": 806543194,
+    "num_optimizer_steps": 98454,
+    "final_val_loss": 4.861852765083313,
+    "train_time_seconds": 3687.175479800004,
+    "config": {
+      "hidden_size": 128,
+      "num_hidden_layers": 4,
+      "num_attention_heads": 4,
+      "head_dim": 32,
+      "intermediate_size": 512
+    }
+  },
+  {
+    "run_id": "C3_XL",
+    "compute_budget": 1e+16,
+    "n_params": 7278592,
+    "num_train_tokens": 228982015,
+    "num_optimizer_steps": 27951,
+    "final_val_loss": 4.341265052556992,
+    "train_time_seconds": 2735.6715322999953,
+    "config": {
+      "hidden_size": 256,
+      "num_hidden_layers": 6,
+      "num_attention_heads": 8,
+      "head_dim": 32,
+      "intermediate_size": 1024
+    }
+  },
+  {
+    "run_id": "C4_L",
+    "compute_budget": 3e+16,
+    "n_params": 4131840,
+    "num_train_tokens": 1210114622,
+    "num_optimizer_steps": 147719,
+    "final_val_loss": 4.397004008293152,
+    "train_time_seconds": 9074.4004317,
+    "config": {
+      "hidden_size": 192,
+      "num_hidden_layers": 5,
+      "num_attention_heads": 6,
+      "head_dim": 32,
+      "intermediate_size": 768
+    }
+  },
+  {
+    "run_id": "C4_XL",
+    "compute_budget": 3e+16,
+    "n_params": 7278592,
+    "num_train_tokens": 686946046,
+    "num_optimizer_steps": 83855,
+    "final_val_loss": 4.085460722446442,
+    "train_time_seconds": 9373.864829999999,
+    "config": {
+      "hidden_size": 256,
+      "num_hidden_layers": 6,
+      "num_attention_heads": 8,
+      "head_dim": 32,
+      "intermediate_size": 1024
+    }
   }
 ]

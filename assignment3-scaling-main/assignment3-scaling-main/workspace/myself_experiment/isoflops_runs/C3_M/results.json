@@ -1,0 +1,16 @@
+{
+  "run_id": "C3_M",
+  "compute_budget": 1e+16,
+  "n_params": 2066432,
+  "num_train_tokens": 806543194,
+  "num_optimizer_steps": 98454,
+  "final_val_loss": 4.861852765083313,
+  "train_time_seconds": 3687.175479800004,
+  "config": {
+    "hidden_size": 128,
+    "num_hidden_layers": 4,
+    "num_attention_heads": 4,
+    "head_dim": 32,
+    "intermediate_size": 512
+  }
+}

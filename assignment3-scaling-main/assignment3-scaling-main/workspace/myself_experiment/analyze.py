@@ -59,7 +59,7 @@ def analyze():
     print("IsoFLOPs Profiles (U-curves)")
     print("=" * 60)
 
-    fig, axes = plt.subplots(2, 2, figsize=(12, 8))
+    fig, axes = plt.subplots(2, 3, figsize=(15, 8))
     axes = axes.flatten()
 
     C_vals, N_opt_vals, D_opt_vals, L_min_vals = [], [], [], []
@@ -100,6 +100,10 @@ def analyze():
         ax.set_title(f"C = {c:.1e} FLOPs")
         ax.legend(fontsize=8)
         ax.grid(True, alpha=0.3)
+
+    # Hide unused subplots (there are 6 panels but only len(budgets) used)
+    for idx in range(len(budgets), 6):
+        axes[idx].set_visible(False)
 
     fig.suptitle("IsoFLOPs Profiles: Loss vs Model Size per Compute Budget", fontsize=14)
     fig.tight_layout()

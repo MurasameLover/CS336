@@ -32,6 +32,7 @@ MODEL_PROTOTYPES = {
     "S":   ModelConfig(vocab_size=5000, hidden_size=96, num_hidden_layers=3, num_attention_heads=4, num_key_value_heads=4, head_dim=24, intermediate_size=384),
     "M":   ModelConfig(vocab_size=5000, hidden_size=128, num_hidden_layers=4, num_attention_heads=4, num_key_value_heads=4, head_dim=32, intermediate_size=512),
     "L":   ModelConfig(vocab_size=5000, hidden_size=192, num_hidden_layers=5, num_attention_heads=6, num_key_value_heads=6, head_dim=32, intermediate_size=768),
+    "XL":  ModelConfig(vocab_size=5000, hidden_size=256, num_hidden_layers=6, num_attention_heads=8, num_key_value_heads=8, head_dim=32, intermediate_size=1024),
 }
 
 
