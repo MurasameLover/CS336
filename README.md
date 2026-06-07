@@ -81,13 +81,63 @@ tests/
 
 ---
 
+## 作业 3：Scaling — 缩放定律
+
+基于作业 1 的自研 Transformer，在 Stanford 的训练 API 上进行大规模 IsoFLOP 实验，验证语言模型缩放定律。
+
+### 项目结构
+
+```
+assignment3-scaling-main/
+├── cs336_scaling/          # 核心框架包
+│   ├── training/           #   训练基础设施（模型定义、数据加载、优化器、训练循环）
+│   ├── api/                #   FastAPI 训练服务（提交/查询/管理实验）
+│   ├── client.py           #   训练 API 客户端
+│   ├── db/                 #   数据库模型（PostgreSQL ORM 表结构）
+│   ├── schemas/            #   请求/响应 Pydantic 模型
+│   ├── scheduler/          #   实验调度器（队列管理、任务分发）
+│   ├── tokenized_data.py   #   分词数据处理工具
+│   └── auth.py / budget.py #   认证与配额管理
+│
+├── workspace/myself_experiment/  # ★ 个人实验工作区
+│   ├── model.py                  #   模型定义
+│   ├── train.py / validate.py    #   训练与验证脚本
+│   ├── config.py / data.py       #   配置与数据加载
+│   │
+│   ├── isoflops_runs/            #   IsoFLOP 实验运行结果（按配置分组 C0–C4）
+│   │   ├── C0_XXS/ … C4_XL/     #   每组含 results.json（loss 曲线等指标）
+│   │   └── ...
+│   ├── validation_run/           #   验证运行结果（results.json + validation_results.json）
+│   ├── figures/                  #   生成的图表（scaling_laws.pdf, isoflops_u_curves.pdf …）
+│   │
+│   ├── run_isoflops.py           #   IsoFLOP 实验批量运行脚本
+│   ├── analyze.py                #   结果分析与缩放定律拟合
+│   ├── extend_experiment.py      #   扩展实验脚本（补充 C3/C4 配置）
+│   ├── isoflops_results.json     #   汇总的 IsoFLOP 结果
+│   └── analysis_predictions.json #   分析的预测结果
+│
+├── examples/           # API 使用示例（Jupyter notebook）
+├── scripts/            # 辅助脚本（数据下载等）
+├── tests/              # 测试（API、调度器）
+└── data/               # 分词后的训练数据
+```
+
+### 实验设计
+
+- 在 **6 种模型规模**（XXS → XL）上运行 IsoFLOP 实验
+- 固定计算预算下，扫描最佳 batch size 与学习率组合
+- 拟合 **缩放定律曲线**，预测最优计算分配
+- 扩展实验（C3/C4）验证更大大规模配置的泛化能力
+
+---
+
 ## 后续作业概览
 
 | # | 主题 | 核心内容 |
 |---|------|---------|
 | 1 | **Basics** ✅ | BPE tokenizer、Transformer 模块、训练循环 |
-| 2 | **Systems** | 高效算子、分布式训练、混合精度 |
-| 3 | **Scaling** | 缩放定律、损失预测、基础设施 |
+| 2 | **Systems** → | 高效算子、分布式训练、混合精度 |
+| 3 | **Scaling** ↑ | 缩放定律、IsoFLOP 实验、损失预测 |
 | 4 | **Data** | 数据管道、去重、过滤 |
 | 5 | **Alignment** | RLHF、DPO、偏好优化 |
 
