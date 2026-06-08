@@ -8,7 +8,7 @@ logger = logging.getLogger(__name__)
 
 def test_identify_language_english():
     moby_expected_path = FIXTURES_PATH / "moby_extracted.txt"
-    with open(moby_expected_path) as f:
+    with open(moby_expected_path, encoding="utf-8") as f:
         moby_expected_text = f.read()
     predicted_language, score = run_identify_language(moby_expected_text)
     # TODO: you may have to change this check below, depending on what your
